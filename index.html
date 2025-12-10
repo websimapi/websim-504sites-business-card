@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>504Sites Business Card</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for the Tech/Neon look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Import Map for QR Code library -->
+    <script type="importmap">
+    {
+        "imports": {
+            "qrcode": "https://esm.sh/qrcode"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Print Button -->
+    <button id="printBtn" onclick="window.print()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print Card
+    </button>
+
+    <div class="viewport-center">
+        <!-- Business Card Container -->
+        <div class="business-card">
+            <!-- Background Elements -->
+            <div class="bg-gradient"></div>
+            <div class="bg-grid"></div>
+
+            <!-- Content -->
+            <div class="card-content">
+                
+                <!-- Header / Logo -->
+                <div class="header">
+                    <h1 class="logo">504<span class="logo-accent">Sites</span></h1>
+                    <p class="tagline">The internet shouldn't be expensive.</p>
+                </div>
+
+                <!-- Main Offer -->
+                <div class="main-body">
+                    <div class="left-col">
+                        <p class="description">
+                            Proudly helping small businesses in <strong>New Orleans</strong> and beyond build their online presence.
+                        </p>
+                        <div class="fleur-container">
+                            <img src="neon_fleur_de_lis.png" alt="NOLA Fleur de Lis" class="fleur-icon">
+                        </div>
+                    </div>
+
+                    <div class="right-col">
+                        <div class="price-container">
+                            <span class="currency">$</span>
+                            <span class="amount">89</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <p class="price-sub">Professional Websites.<br>No Crushing Costs.</p>
+                    </div>
+                </div>
+
+                <!-- Footer / QR -->
+                <div class="footer">
+                    <div class="website-url">504sites.com</div>
+                    <div class="qr-container">
+                        <canvas id="qr-canvas"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
