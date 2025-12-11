@@ -221,19 +221,11 @@ body {
     margin-left: calc(0.02in * var(--scale));
 }
 
-.price-sub {
-    font-size: calc(0.08in * var(--scale));
-    color: #fff;
-    font-weight: 700;
-    margin-right: calc(0.05in * var(--scale));
-    text-align: right;
-}
-
 /* Footer Section */
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: calc(0.05in * var(--scale));
 }
 
@@ -244,11 +236,27 @@ body {
     letter-spacing: calc(1px * var(--scale));
 }
 
+.footer-right {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.price-sub {
+    font-size: calc(0.08in * var(--scale));
+    color: #fff;
+    font-weight: 700;
+    margin-right: calc(0.05in * var(--scale));
+    text-align: right;
+    margin-bottom: calc(0.03in * var(--scale));
+}
+
 .qr-container {
     /* moved QR into normal flow instead of absolutely positioning it */
     margin-left: auto;
-    width: calc(0.65in * var(--scale));
-    height: calc(0.65in * var(--scale));
+    width: calc(0.6in * var(--scale));
+    height: calc(0.6in * var(--scale));
     background: white;
     padding: calc(0.03in * var(--scale));
     border-radius: calc(2px * var(--scale));
