@@ -261,6 +261,7 @@ body {
     background: white;
     padding: calc(0.03in * var(--scale));
     border-radius: calc(2px * var(--scale));
+    margin-top: -25px; /* Move QR code up */
 }
 
 #qr-canvas {
