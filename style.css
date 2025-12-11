@@ -108,7 +108,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: calc(0.15in * var(--scale));
-    padding-right: calc(0.9in * var(--scale)); /* Extra space so text doesn't go under QR */
     justify-content: space-between;
 }
 
@@ -245,9 +244,8 @@ body {
 }
 
 .qr-container {
-    position: absolute;
-    bottom: calc(0.15in * var(--scale));
-    right: calc(0.15in * var(--scale));
+    /* moved QR into normal flow instead of absolutely positioning it */
+    margin-left: auto;
     width: calc(0.65in * var(--scale));
     height: calc(0.65in * var(--scale));
     background: white;
