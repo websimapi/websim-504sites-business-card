@@ -239,17 +239,18 @@ body {
 .footer-right {
     margin-left: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
+    gap: calc(0.03in * var(--scale));
 }
 
 .price-sub {
     font-size: calc(0.08in * var(--scale));
     color: #fff;
     font-weight: 700;
-    margin-right: calc(0.05in * var(--scale));
+    margin-right: 0;
     text-align: right;
-    margin-bottom: calc(0.03in * var(--scale));
+    margin-bottom: 0;
 }
 
 .qr-container {
