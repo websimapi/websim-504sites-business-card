@@ -108,6 +108,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: calc(0.15in * var(--scale));
+    padding-right: calc(0.9in * var(--scale)); /* Extra space so text doesn't go under QR */
     justify-content: space-between;
 }
 
