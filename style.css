@@ -222,10 +222,11 @@ body {
 }
 
 .price-sub {
-    text-align: right;
     font-size: calc(0.08in * var(--scale));
     color: #fff;
     font-weight: 700;
+    margin-right: calc(0.05in * var(--scale));
+    text-align: right;
 }
 
 /* Footer Section */
