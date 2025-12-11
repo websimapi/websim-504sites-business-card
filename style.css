@@ -280,9 +280,9 @@ body {
     body {
         background: none;
         display: block;
-        height: auto;
-        width: 3.5in;
-        height: 2in;
+        /* Remove conflicting fixed width/height to avoid scaling issues */
+        margin: 0;
+        padding: 0;
     }
 
     #printBtn {
@@ -292,8 +292,10 @@ body {
     .viewport-center {
         display: block;
         padding: 0;
+        /* Center the card on the printed page */
         width: 3.5in;
         height: 2in;
+        margin: 0;
     }
 
     .business-card {
@@ -306,7 +308,9 @@ body {
         /* Ensure background prints */
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-        border: 1px solid #ddd; /* Light border to show cut lines if printed on white paper */
+        /* Remove border so final physical size is exactly 3.5in x 2in */
+        border: none;
+        margin: 0 auto;
     }
 
     /* Adjust gradient opacity for print if necessary, but keep it accurate to design */
