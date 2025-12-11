@@ -226,7 +226,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: calc(0.05in * var(--scale));
+    margin-top: 0;
 }
 
 .website-url {
@@ -240,7 +240,7 @@ body {
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: calc(0.03in * var(--scale));
 }
 
